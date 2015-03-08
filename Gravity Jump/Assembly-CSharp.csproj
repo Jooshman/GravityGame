@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\CreateCubes.cs" />
      <Compile Include="Assets\Scripts\CubeColor.cs" />
      <Compile Include="Assets\Scripts\MovementControl.cs" />
+     <Compile Include="Assets\Scripts\PlayButton.cs" />
      <Compile Include="Assets\Scripts\ScoreCounter.cs" />
      <Compile Include="Assets\Scripts\WallCollision.cs" />
  <Reference Include="UnityEngine.UI">

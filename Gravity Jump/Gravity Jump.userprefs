@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ScoreCounter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MovementControl.cs">
     <Files>
-      <File FileName="Assets\Scripts\MovementControl.cs" Line="19" Column="1" />
-      <File FileName="..\Hack the Anvil 1.0\Assets\Scripts\ballJump.cs" Line="1" Column="19" />
-      <File FileName="Assets\Scripts\CreateCubes.cs" Line="20" Column="2" />
-      <File FileName="Assets\Scripts\WallCollision.cs" Line="10" Column="3" />
-      <File FileName="Assets\Scripts\BallCollision.cs" Line="8" Column="4" />
-      <File FileName="Assets\Scripts\ScoreCounter.cs" Line="7" Column="19" />
+      <File FileName="Assets\Scripts\CreateCubes.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayButton.cs" Line="14" Column="8" />
+      <File FileName="Assets\Scripts\MovementControl.cs" Line="40" Column="28" />
+      <File FileName="Assets\Scripts\WallCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BallCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ScoreCounter.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

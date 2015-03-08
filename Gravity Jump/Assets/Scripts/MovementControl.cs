@@ -7,17 +7,25 @@ public class MovementControl : MonoBehaviour {
 	public KeyCode space;
 	public const int CEIL_POS = 7;
 	public const float FLOOR_POS =  0.6f;
-	public bool inAir = false;
+	public static bool inAir = false;
 	public int gravityClock = 0;
-	public int gravity = 1;
+	public static int gravity = 1;
 	public static int timesPlayed = 1;
 	
 
 	void Start(){
+		if (gravity == -1) {
+			Physics.gravity = new Vector3(0,Physics.gravity.y*-1,0);
+			gravityClock = 0;
+			gravity *= -1;
+		}
+
 		if(timesPlayed == 1){
 			Physics.gravity = new Vector3 (0, Physics.gravity.y*2, 0);
 
 		}
+		Debug.Log (Physics.gravity.y);
+		//gravity = 1;
 		//new CreateCubes(1);
 		//GetComponent<Rigidbody> ().AddForce (new Vector3 (-20, 0, 0), ForceMode.Impulse);
 		//GetComponent<Rigidbody> ().AddForce (new Vector3 (0, 2f*gravity,0), ForceMode.Impulse);
@@ -27,7 +35,7 @@ public class MovementControl : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-
+		transform.Rotate (new Vector3 (0, 0, -15));
 		//scoreText.text = "Score: " + score;
 		if (Input.GetKey (space) && inAir == false) {
 			inAir = true;
@@ -41,6 +49,11 @@ public class MovementControl : MonoBehaviour {
 		}
 
 		if (Input.GetKey (KeyCode.Return)) {
+			if(gravity == -1){
+				Physics.gravity = new Vector3(0, Physics.gravity.y*-1, 0);
+			}
+			gravity = 1;
+			inAir = false;
 			Application.LoadLevelAsync(0);
 			DontDestroyOnLoad(GameObject.Find("Directional Light"));
 			DontDestroyOnLoad(GameObject.Find("Main Camera"));
